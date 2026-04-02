@@ -1,17 +1,17 @@
 class TurboLang < Formula
   desc "The Turbo programming language compiler"
-  homepage "https://github.com/ZVN-DEV/turbo"
+  homepage "https://github.com/ZVN-DEV/Turbo-Language"
   # url will be set when we publish releases
-  # url "https://github.com/ZVN-DEV/turbo/archive/refs/tags/v0.1.0.tar.gz"
+  # url "https://github.com/ZVN-DEV/Turbo-Language/archive/refs/tags/v0.1.0.tar.gz"
   # sha256 "PLACEHOLDER"
   license "MIT"
-  head "https://github.com/ZVN-DEV/turbo.git", branch: "master"
+  head "https://github.com/ZVN-DEV/Turbo-Language.git", branch: "master"
 
   depends_on "rust" => :build
 
   def install
     cd "turbo" do
-      system "cargo", "build", "--release", "--bin", "turbo", "--bin", "turbo-lsp"
+      system "cargo", "build", "--release", "-p", "turbo-cli", "-p", "turbo-lsp"
       bin.install "target/release/turbo"
       bin.install "target/release/turbo-lsp"
     end
