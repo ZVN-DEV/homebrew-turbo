@@ -12,7 +12,7 @@ class TurboLang < Formula
   def install
     cd "turbo" do
       system "cargo", "build", "--release", "-p", "turbo-cli", "-p", "turbo-lsp"
-      bin.install "target/release/turbo"
+      bin.install "target/release/turbolang"
       bin.install "target/release/turbo-lsp"
     end
   end
@@ -23,6 +23,6 @@ class TurboLang < Formula
           print("Hello, Turbo!")
       }
     TURBO
-    assert_match "Hello, Turbo!", shell_output("#{bin}/turbo run #{testpath}/hello.tb")
+    assert_match "Hello, Turbo!", shell_output("#{bin}/turbolang run #{testpath}/hello.tb")
   end
 end
