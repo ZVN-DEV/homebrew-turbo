@@ -22,6 +22,9 @@ class TurboLang < Formula
     end
   end
 
+  # Prebuilt binary — no compilation needed
+  bottle :unneeded
+
   def install
     bin.install "turbolang"
   end
