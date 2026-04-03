@@ -22,6 +22,13 @@ class TurboLang < Formula
     end
   end
 
+  bottle do
+    root_url "https://github.com/ZVN-DEV/Turbo-Language/releases/download/v0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2416226d6a2726d1164c5700388eac22afc2a329172264665c465fe12f9d9cd7"
+    sha256 cellar: :any_skip_relocation, sequoia:       "98197cf2e6239bec411e7b7471ed59dcc5b43035b5bbf804221c662bf8981a64"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "600c57ac9ccf59df01234abeabb0bb1216a233262f12545f5989b0fa1da9913e"
+  end
+
   def install
     bin.install "turbolang"
   end
