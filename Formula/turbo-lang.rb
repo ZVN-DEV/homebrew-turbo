@@ -1,9 +1,9 @@
 class TurboLang < Formula
   desc "The Turbo programming language compiler"
   homepage "https://github.com/ZVN-DEV/Turbo-Language"
-  url "https://github.com/ZVN-DEV/Turbo-Language/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c16d39d559447553ac07a714c031eea87865003c50e0afa3a55c53098c1f2204"
-  version "0.1.0"
+  url "https://github.com/ZVN-DEV/Turbo-Language/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "6c205118c32465e0c8ca2b001c53e35526c17774518e70b6276ba52401a7327b"
+  version "0.2.0"
   license "MIT"
   head "https://github.com/ZVN-DEV/Turbo-Language.git", branch: "master"
 
