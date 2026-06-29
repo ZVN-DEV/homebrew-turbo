@@ -1,6 +1,6 @@
 # Homebrew Tap for Turbo
 
-Install the [Turbo programming language](https://github.com/ZVN-DEV/turbo) via Homebrew.
+Install the [Turbo programming language](https://github.com/ZVN-DEV/Turbo-Language) via Homebrew.
 
 ## Install
 
