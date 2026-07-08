@@ -1,24 +1,24 @@
 class TurboLang < Formula
   desc "Compiled, type-safe language with TypeScript DX and Rust performance"
   homepage "https://turbolang.dev"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ZVN-DEV/Turbo-Language/releases/download/v0.12.0/turbolang-v0.12.0-aarch64-apple-darwin.tar.gz"
-      sha256 "de6f7474a2245772ab972be442069ffc6318d5e9db0e624ba7d3f65d6d293f30"
+      url "https://github.com/ZVN-DEV/Turbo-Language/releases/download/v0.13.0/turbolang-v0.13.0-aarch64-apple-darwin.tar.gz"
+      sha256 "d66edb332598813e37f6ce193cef1a114da136f62f4b6c3d3029d88ab0f5eb92"
     end
     on_intel do
-      url "https://github.com/ZVN-DEV/Turbo-Language/releases/download/v0.12.0/turbolang-v0.12.0-x86_64-apple-darwin.tar.gz"
-      sha256 "a349cd4cc0de71395e8043400d1abad259a981cccb88444257410e13bc70006f"
+      url "https://github.com/ZVN-DEV/Turbo-Language/releases/download/v0.13.0/turbolang-v0.13.0-x86_64-apple-darwin.tar.gz"
+      sha256 "ba171fd4a0798d3a8e29ccb3d3ec1e9551056661a58573c75d6dddaae2e610a2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ZVN-DEV/Turbo-Language/releases/download/v0.12.0/turbolang-v0.12.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "031c43191869ea9d8df38511174b6546ea3544add41b9cb1c4e2871dcd236b38"
+      url "https://github.com/ZVN-DEV/Turbo-Language/releases/download/v0.13.0/turbolang-v0.13.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "14ffcee4352c065c18054928d0b1bb91da347767e8d29f6766179fdd4fd2f0fb"
     end
   end
 
@@ -28,7 +28,7 @@ class TurboLang < Formula
   end
 
   test do
-    assert_match "turbolang 0.12.0", shell_output("#{bin}/turbolang --version")
+    assert_match "turbolang 0.13.0", shell_output("#{bin}/turbolang --version")
     assert_predicate bin/"turbo-lsp", :exist?
   end
 end
